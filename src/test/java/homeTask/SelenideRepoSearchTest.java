@@ -21,6 +21,6 @@ public class SelenideRepoSearchTest {
         // Убедиться, что есть пример кода для JUnit5
 //        $x("//h4[contains(text(), 'JUnit5')]/following-sibling::div//span[text()='Test']").should(exist);
         $$("h4").findBy(matchText("JUnit5")).sibling(1)
-                .$("div").$(withTagAndText("span", "Test"));
+                .$("div.highlight-source-java").$(withTagAndText("span", "Test"));
     }
 }
