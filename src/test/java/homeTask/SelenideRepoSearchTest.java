@@ -19,6 +19,7 @@ public class SelenideRepoSearchTest {
         $(withTagAndText("button", "more page")).click();
         $$("li.Box-row a").findBy(text("SoftAssertions")).click();
         // Убедиться, что есть пример кода для JUnit5
+        // Критерием посчитал наличие строки Test, располагающегося после заголовка
 //        $x("//h4[contains(text(), 'JUnit5')]/following-sibling::div//span[text()='Test']").should(exist);
         $$("h4").findBy(matchText("JUnit5")).sibling(1)
                 .$("div.highlight-source-java").$(withTagAndText("span", "Test"));
