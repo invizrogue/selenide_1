@@ -1,4 +1,4 @@
-package homeTaskPartOne;
+package hometask.partone;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package homeTaskPartTwo;
+package hometask.parttwo;
 
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.Test;
